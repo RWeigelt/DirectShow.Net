@@ -33,7 +33,7 @@ using System.Security.Permissions;
 [assembly : AssemblyConfiguration("")]
 [assembly : AssemblyCompany("")]
 [assembly : Guid("6D0386CE-37E6-4f77-B678-07C584105DC6")]
-[assembly : AssemblyVersion("2.1.0.*")]
+[assembly : AssemblyVersion("2.1.0.0")]
 #if DEBUG
 [assembly : AssemblyProduct("Debug Version")]
 #else
@@ -43,11 +43,8 @@ using System.Security.Permissions;
 [assembly : AssemblyTrademark("")]
 [assembly : AssemblyCulture("")]
 [assembly : AssemblyDelaySign(false)]
-// Path is relative to the resulting executable (\Bin\Debug)
-#if USING_NET11
-[assembly : AssemblyKeyFile("..\\..\\DShowNET.snk")]
-#endif
-[assembly : AssemblyKeyName("")]
 [assembly : ComVisible(false)]
 [assembly : CLSCompliant(true)]
-[assembly : SecurityPermission(SecurityAction.RequestMinimum, UnmanagedCode=true)]
+#if NET5_0
+[assembly: System.Runtime.Versioning.SupportedOSPlatform("windows")]
+#endif

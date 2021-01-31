@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>DirectShowLib</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>DShowNET.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<PackageId>DirectShowLib.Net</PackageId>
+		<Authors>http://sourceforge.net/projects/directshownet/</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="lib\" />
+  </ItemGroup>
+
+</Project>
