@@ -11,8 +11,8 @@
 		<Authors>http://sourceforge.net/projects/directshownet/</Authors>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="lib\" />
-  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy  &quot;$(TargetPath)&quot; &quot;$(SolutionDir)..\lib\$(TargetFileName)&quot;" />
+  </Target>
 
 </Project>
