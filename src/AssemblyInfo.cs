@@ -45,6 +45,6 @@ using System.Security.Permissions;
 [assembly : AssemblyDelaySign(false)]
 [assembly : ComVisible(false)]
 [assembly : CLSCompliant(true)]
-#if NET5_0
+#if NET6_0
 [assembly: System.Runtime.Versioning.SupportedOSPlatform("windows")]
 #endif
